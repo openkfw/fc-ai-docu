@@ -1,0 +1,30 @@
+.disclaimer {
+  margin: 1rem 0 2rem 0;
+}
+
+.disclaimer blockquote {
+  background-color: var(--ifm-color-secondary-lightest);
+  border-left: 4px solid var(--ifm-color-secondary);
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.disclaimer blockquote strong {
+  color: var(--ifm-color-primary-dark);
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.glossaryLink {
+  color: var(--ifm-color-info-dark);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dotted var(--ifm-color-info-dark);
+}
+
+.glossaryLink:hover {
+  color: var(--ifm-color-info-darker);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ifm-color-info-darker);
+}
