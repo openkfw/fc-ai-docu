@@ -13,7 +13,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://openkfw.github.io/fc-ai-docu/",
+  url: "https://openkfw.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // Use environment variable or default to GitHub Pages path
@@ -51,7 +51,9 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/openkfw/kfw-ai-docu/tree/main/",
+          editUrl: "https://github.com/openkfw/fc-ai-docu/tree/main/",
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: false,
         theme: {
@@ -79,11 +81,39 @@ const config = {
             position: "left",
             label: "Use Cases",
           },
+          {
+            href: "https://github.com/openkfw/fc-ai-docu",
+            label: "GitHub",
+            position: "right",
+          },
         ],
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} AI Use Cases Documentation.`,
+        links: [
+          {
+            title: "Development",
+            items: [
+              {
+                label: "GitHub Repository",
+                href: "https://github.com/openkfw/fc-ai-docu",
+              },
+              {
+                label: "Contributors",
+                href: "https://github.com/openkfw/fc-ai-docu/graphs/contributors",
+              },
+              {
+                label: "Issues",
+                href: "https://github.com/openkfw/fc-ai-docu/issues",
+              },
+              {
+                label: "Discussions",
+                href: "https://github.com/openkfw/fc-ai-docu/discussions",
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} KfW Development Bank. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
