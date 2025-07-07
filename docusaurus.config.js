@@ -13,16 +13,22 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://openkfw.github.io/fc-ai-docu/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // Use environment variable or default to GitHub Pages path
-  baseUrl: process.env.NODE_ENV === 'development' ? '/' : '/fc-ai-docu/',
+  baseUrl: process.env.NODE_ENV === "development" ? "/" : "/fc-ai-docu/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "kfw", // Usually your GitHub org/user name.
+  organizationName: "openkfw", // Usually your GitHub org/user name.
   projectName: "fc-ai-docu", // Usually your repo name.
+
+  // Custom fields for reusable project variables
+  customFields: {
+    teamName: "FC AI",
+    contentType: "use cases", // e.g., "fact sheets", "use cases", "tutorials"
+  },
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -45,7 +51,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/your-org/kfw-ai-docu/tree/main/",
+          editUrl: "https://github.com/openkfw/kfw-ai-docu/tree/main/",
         },
         blog: false,
         theme: {
