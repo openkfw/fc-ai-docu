@@ -13,7 +13,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://openkfw.github.io",
+  url: "https://www.fretchen.eu",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // Use environment variable or default to GitHub Pages path
@@ -21,7 +21,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "openkfw", // Usually your GitHub org/user name.
+  organizationName: "fretchen", // Usually your GitHub org/user name.
   projectName: "fc-ai-docu", // Usually your repo name.
 
   // Custom fields for reusable project variables

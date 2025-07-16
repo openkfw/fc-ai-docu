@@ -3,15 +3,15 @@ sidebar_position: 2
 sidebar_label: Contributing Guide
 ---
 
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-export const ProjectLink = ({path, children}) => {
+export const ProjectLink = ({ path, children }) => {
   const { siteConfig } = useDocusaurusContext();
   const repoUrl = `https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`;
   return <a href={`${repoUrl}${path}`}>{children}</a>;
 };
 
-export const SiteLink = ({children}) => {
+export const SiteLink = ({ children }) => {
   const { siteConfig } = useDocusaurusContext();
   const siteUrl = `${siteConfig.url}${siteConfig.baseUrl}`;
   return <a href={siteUrl}>{children}</a>;
