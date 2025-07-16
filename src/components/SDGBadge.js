@@ -41,7 +41,8 @@ const SDGBadge = ({ pillar, compact = false }) => {
     <span
       className={`${styles.badge} ${compact ? styles.compact : ""}`}
       style={{ backgroundColor: pillarInfo.color }}
-      title={pillarInfo.tooltip}>
+      title={pillarInfo.tooltip}
+    >
       <span className={styles.emoji}>{pillarInfo.emoji}</span>
       {!compact && <span className={styles.text}>{pillar}</span>}
     </span>
