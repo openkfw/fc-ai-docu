@@ -205,12 +205,12 @@
   .useCaseGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .tagFilters,
   .difficultyFilters {
     gap: 0.25rem;
   }
-  
+
   .filterButton,
   .tagFilter {
     padding: 0.375rem 0.75rem;
