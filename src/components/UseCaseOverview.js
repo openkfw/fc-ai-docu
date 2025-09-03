@@ -12,7 +12,7 @@ const clusterMetadata = {
     color: "#e3f2fd",
     borderColor: "#1976d2",
   },
-  "Data Processing & Extraction": {
+  "Information Processing & Extraction": {
     description:
       "Intelligent document analysis and information extraction systems",
     icon: "📄",
@@ -33,7 +33,7 @@ function loadUseCases() {
   const requireContext = require.context(
     "../../docs/use-cases",
     false,
-    /\.mdx$/,
+    /\.mdx$/
   );
   const useCases = [];
 
@@ -83,7 +83,7 @@ function generateClusters() {
         clusters[clusterName].useCases.push(useCase);
       } else {
         console.warn(
-          `Unknown cluster "${clusterName}" found in use case "${useCase.title}"`,
+          `Unknown cluster "${clusterName}" found in use case "${useCase.title}"`
         );
       }
     });
@@ -115,8 +115,7 @@ function ClusterCard({ clusterName, cluster }) {
       style={{
         backgroundColor: cluster.color,
         borderLeft: `4px solid ${cluster.borderColor}`,
-      }}
-    >
+      }}>
       <div className="card__header">
         <h3>
           <span style={{ fontSize: "1.5em", marginRight: "0.5rem" }}>
@@ -132,8 +131,7 @@ function ClusterCard({ clusterName, cluster }) {
             <Link
               key={index}
               to={useCase.path}
-              className={clsx("card", styles.useCaseCard)}
-            >
+              className={clsx("card", styles.useCaseCard)}>
               <div className="card__header">
                 <h4>{useCase.title}</h4>
                 <div className={styles.difficultyBadge}>
@@ -141,8 +139,7 @@ function ClusterCard({ clusterName, cluster }) {
                     className={styles.difficultyDot}
                     style={{
                       backgroundColor: difficultyColors[useCase.difficulty],
-                    }}
-                  ></span>
+                    }}></span>
                   {useCase.difficulty}
                 </div>
               </div>
@@ -192,7 +189,7 @@ export const ThematicCluster = ({ name }) => {
   if (!cluster) {
     console.warn(
       `Cluster "${name}" not found. Available clusters:`,
-      Object.keys(clusters),
+      Object.keys(clusters)
     );
     return null;
   }
@@ -203,8 +200,7 @@ export const ThematicCluster = ({ name }) => {
         <Link
           key={index}
           to={useCase.path}
-          className={clsx("card", styles.useCaseCard)}
-        >
+          className={clsx("card", styles.useCaseCard)}>
           <div className="card__header">
             <h4>{useCase.title}</h4>
           </div>
